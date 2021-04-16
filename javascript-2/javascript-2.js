@@ -1,5 +1,7 @@
 ////////////////////PROBLEM 1////////////////////
 
+const e = require("cors")
+
 //DO NOT EDIT CODE BELOW
 let foods = [
   {
@@ -36,6 +38,11 @@ let foods = [
 */
 
 //CODE HERE
+
+// foods.forEach((element, index, array) => {
+
+// })
+
 
 //////////////////////////////////PROBLEMS 2-4//////////////////////////////////
 /*
@@ -82,6 +89,10 @@ const products = [
 
 //CODE HERE
 
+// const saleProducts = products.map((element, index, arr) =>{
+//   return element['price'] + .25 / (element['price'] * 10000 )
+// })
+
 ////////////////////PROBLEM 3////////////////////
 /*
   A customer has placed an order - they want one of every product that has blue on it. 
@@ -92,6 +103,10 @@ const products = [
 
 //CODE HERE
 
+// const blueProducts = saleProducts.filter((element, index, arr) => {
+   
+// })
+
 ////////////////////PROBLEM 4////////////////////
 /*
   Now you'd like to get them their order total. 
@@ -100,6 +115,10 @@ const products = [
 */
 
 //CODE HERE
+
+// const orderTotal = blueProducts.reduce((element, index, arr) => {
+
+// })
 
 //////////////////////////////////PROBLEMS 5-8//////////////////////////////////
 /*
@@ -131,6 +150,9 @@ const shippingInfo = {
 
 //CODE HERE
 
+let helensInfo = Object.assign(contactInfo, shippingInfo)
+
+
 ////////////////////PROBLEM 6////////////////////
 /*
   Helen has a daughter named Ellen that lives at the same address.
@@ -139,6 +161,10 @@ const shippingInfo = {
 */
 
 //CODE HERE
+
+let ellensInfo = [...helensInfo]
+ellensInfo.name = 'Ellen'
+ellensInfo.email = 'ellen@email.com'
 
 ////////////////////PROBLEM 7////////////////////
 /* 
@@ -217,6 +243,8 @@ const userInfo = {
 
 //CODE HERE
 
+
+
 ////////////////////PROBLEM 10////////////////////
 /*
   Set the value of topic below to the last item in gn@rly_c0der_007's topics array
@@ -224,6 +252,8 @@ const userInfo = {
 */
 
 //CODE HERE
+
+
 
 ////////////////////PROBLEM 11////////////////////
 /*
@@ -252,6 +282,13 @@ const userInfo = {
 
 //CODE HERE
 
+// let person = {
+//   name: 'John',
+//   age: 25,
+//   jobs: ['farmer', 'herder', 'biker']
+  
+// }
+
 //////////////////////////////////PROBLEMS 13-14//////////////////////////////////
 /*
   For the last two problems, you will be determining the 
@@ -276,7 +313,7 @@ const workout = {
 //let context1 = myFunc
 //let context1 = window
 //let context1 = global
-// let context1 = workout
+ let context1 = workout
 
 ////////////////////PROBLEM 14////////////////////
 /*
@@ -289,6 +326,6 @@ function myFunc() {
 }
 
 //let context2 = myFunc
-// let context2 = window
+ let context2 = window
 //let context2 = global
 //let context2 = workout

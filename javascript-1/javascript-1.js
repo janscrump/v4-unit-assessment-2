@@ -351,7 +351,7 @@ function Phone(brand, model, storage, color, sold){
 //CODE HERE
 
 Phone.prototype.sell = function(){
-    this.sold = true
+    Phone(this.sold += true)
     return `${this.brand} ${this.model} has been sold`
 }
 
