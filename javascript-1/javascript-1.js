@@ -23,7 +23,10 @@ const nestedLetters = ['m', 'g', 'e', 'q', 'h', ['n', 'b', ['v', 'z', 'y', 'r']]
 
 //CODE HERE
 
-const foundZ = nestedLetters 
+const foundZ = nestedLetters[5][2][1]
+
+// const foundZ = nestedLetters
+
 ////////////////////PROBLEM 3////////////////////
 /*
     Use the spread operator to combine the following arrays into one array.
@@ -202,6 +205,14 @@ let pairsArray = []
 
 //CODE HERE
 
+for(let i = 0; i < lettersToPair.length; i++){
+    for(let j = i + 1; j < lettersToPair.length; j++){
+        if(lettersToPair[i] === lettersToPair[j]){
+            pairsArray.push(lettersToPair[i])
+        }
+    }
+}
+
 
 //////////////////////////////////PROBLEMS 11-14//////////////////////////////////
 /*
@@ -351,7 +362,7 @@ function Phone(brand, model, storage, color, sold){
 //CODE HERE
 
 Phone.prototype.sell = function(){
-    Phone(this.sold += true)
+    (this.sold = true)
     return `${this.brand} ${this.model} has been sold`
 }
 
